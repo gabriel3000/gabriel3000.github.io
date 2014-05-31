@@ -1,1 +1,53 @@
-Hello World
+<!DOCTYPE html>
+<head>
+<title>gabriel3000</title>
+<meta name="robots" content="no index, no follow">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+<script type="text/javascript" src="js/script.js"></script>
+<link type="text/css" rel="stylesheet" href="css/style.css"/>
+</head>
+<body>
+	<div class="info">
+	<table><tbody><tr><td>
+	<div>
+	<h1>Gabriel3000</h1>
+	</div>
+	<div>
+	<p>I'm learning github. It's fun!!!!</P>
+	</div>
+	</td></tr></tbody></table>
+	<div id="deathSprite">&nbsp;</div>
+	</div>
+</body>
+<script>
+$(document).keydown(function(e){
+    if (e.keyCode == 39) { 
+       $('#deathSprite').addClass('deathWalking');
+       var leftIndex = $('#deathSprite').css('left');
+       var topIndex = $('#deathSprite').css('left');
+       
+       window.setInterval(moveRight(leftIndex, topIndex),100);
+       return false;
+    }
+});
+$(document).keyup(function(e){
+    if (e.keyCode == 39) { 
+       $('#deathSprite').removeClass('deathWalking');
+       return false;
+    }
+});
+function moveRight(leftIndex, topIndex){
+	var left = parseInt(leftIndex);
+	var top = parseInt(topIndex);
+	var newLeftPosition = left + 4;
+	$('#deathSprite').css('left',newLeftPosition);
+}
+/*
+37 - left
+38 - up
+39 - right
+40 - down
+*/
+</script>
+</html>
