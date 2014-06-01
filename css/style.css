@@ -564,12 +564,18 @@ width: 100%;
 /*GLOBZ BREAH END*/
 @media (max-width: 1199px){
   #container{
-  margin:0px 10px;
+  margin:68px 10px;
+  }
+  .genericContentArea{
+  padding:10px;
   }
 }
 
 
 @media (max-width: 400px){
+  #container{
+  margin:38px 10px;
+  }
   .col-66{
   width: 100%;
   }
