@@ -33,6 +33,8 @@ margin-bottom: 68px;
 box-shadow: 0px 0px 8px rgba(0,0,0,.8);
 }
 #popUpWrap{
+top: 0px;
+left: 0px;
 display: none;
 z-index: 6000;
 position: fixed;
