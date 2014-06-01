@@ -541,7 +541,7 @@ padding: 4px;
 /*--CONTENTSEND--*/
 /*googleMaps*/
 #map-canvas{
-height: 620px;
+height: 720px;
 width: 100%;
 }
 /*googleMaps*/
@@ -586,6 +586,10 @@ width: 100%;
 
 
 @media (max-width: 550px){
+  #map-canvas{
+  height: 320px;
+  width: 100%;
+  }
   .genericContentArea{
     height: auto!important;
   }
