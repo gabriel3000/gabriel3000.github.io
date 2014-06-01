@@ -571,13 +571,17 @@ width: 100%;
   }
 }
 
-@media (max-width: 700px){
+@media (max-width: 750px){
   #imageScroller_Container{
   height: 360px;
   }
+  #header a {
+    font-size: 12px;
+  }
 }
 
-@media (max-width: 400px){
+
+@media (max-width: 550px){
   .genericContentArea{
     height: auto!important;
   }
