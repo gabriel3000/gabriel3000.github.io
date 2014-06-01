@@ -468,8 +468,11 @@ background-image: url('../images/campWing.JPG');
 .genericContentAreaSuperWidth{
 position: relative;
 }
-.locationDetails p, .accomodation p{
+.locationDetails p, .accomodation p, .RSVP p{
 color: #ffffff;
+}
+#menu{
+text-align: center;
 }
 /*
 1.) Venue
@@ -481,7 +484,7 @@ color: #ffffff;
 .lineTitle{
 position: relative;
 }
-.line{
+h2 .line{
 position: absolute;
 top: 32px;
 width: 100%;
@@ -491,7 +494,8 @@ z-index: 0;
 display: block;
 background-color: #cccccc;
 }
-.title{
+h2 .title{
+font-weight: normal;
 font-size: 38px;
 position: relative;
 z-index: 2;

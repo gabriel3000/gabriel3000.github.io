@@ -59,24 +59,12 @@
    </script>
 </head>
 <body>
-<div id="popUpWrap" onclick="closeInfoPopUp();">
-<table style="width:100%;height:100%;"><tbody><tr><td style="vertical-align:middle;">
-   <div id="menuInfo" class="popUp" onclick="cancelBubble(event)">
-      <span class="x" onclick="closeInfoPopUp();">x</span>
-      <div class="moreInfoSection">
-      <img src="images/blueRibbon.JPG" style="width:200px;margin:0 auto; display:block;"/>
-      <h2>Catered by Blue Ribbon BBQ</h2>
-      <p>Pulled Pork &bull; Mac n' Cheese &bull; Collard Greens</p>
-      </div><!--moreInfoSection-->
-   </div>
-</td></tr></tbody></table>
-</div>
 <div id="header">
    <div id="center-header">
       <a href="#venue" class="headerLink">Venue</a>
       <a href="#accomodations" class="headerLink">Accomodations</a>
       <a href="#schedule" class="headerLink">Wedding Schedule</a>
-      <a href="menu" onclick="infoPopUp(this); return false;" class="headerLink">Menu</a>
+      <a href="#menu" class="headerLink">Menu</a>
       <a href="#rsvp" class="headerLink">RSVP</a>
       <a href="#howItHappened">The Proposal</a>
       <a href="#album">Photo Album</a>
@@ -123,7 +111,7 @@
 
 <p>After I got home from work, I kissed and hugged Sarah as I always do, then I picked up Sweet Pea who was jumping up and down at my legs by this point. The routine is get home, kiss Sarah, then take Sweets out to do her business.</p>
 
-<p>I grabbed her leash and headed outside. We did the regular loop around the block, accept this time I stopped back at my car before we went back in. I grabbed the necklace from the glove compartment.</p>
+<p>I grabbed her leash and headed outside. We did the regular loop around the block, except this time I stopped back at my car before we went back in. I grabbed the necklace from the glove compartment.</p>
 
 <p>At this point I have to say, I had no idea what I was doing. For the month or so prior to this, I was thinking of cool ways to propose to Sarah. "Red-Sox game." was one thought... Do I really like the Red Sox that much? No. not really. I can only name one player. Top of a mountain. Okay. Well, Actually, can a British-Columbian really propose on top of a mountain in Massachusetts? No. it doesn't feel right. What about some sort of trip somewhere? But where would be worthy of such an event?</p>
 
@@ -163,6 +151,7 @@
       </div>
       
    </div>
+</div>
    <div id="CampWingImage" class="sectionImage sectionImageRight">&nbsp;</div>
 </div>
 
@@ -199,7 +188,7 @@
             <td class="time"><span>5:30pm</span></td>
             <td class="activity">
                <h4 class="activityTitle">Camp Wing Check In</h4>
-               <p>Guests who are staying at Camp Wing for the weekend can check in at this point. If you decided to stay at one of the surrounding hotels feel free to come hang out at the venue.</p>
+               <p>Guests who are staying at Camp Wing for the weekend can check in at this point.</p>
             </td>
          </tr>
       </tbody>
@@ -211,50 +200,50 @@
             <td class="time"><span>8:00am</span></td>
             <td class="activity">
                <h4 class="activityTitle">Breakfast</h4>
-               <p>Good ol eggs and bacon</p>
+               <p>Bagels, Coffee. That sort of thing.</p>
             </td>
          </tr>
          <tr>
             <td class="time"><span>10:00am</span></td>
             <td class="activity">
                <h4 class="activityTitle">Activities</h4>
-               <p>Canoes, Kayaks, Paddle Boats. USA vs CANADA kickball game. Start training.</p>
+               <p>Canoes, Kayaks, Paddle Boats, Archery? USA vs CANADA kickball game. Start training.</p>
             </td>
          </tr>
          <tr>
             <td class="time"><span>Noon</span></td>
             <td class="activity">
                <h4 class="activityTitle">Lunch</h4>
-               <p>Lunch!</p>
+               <p>Lunch! No idea what's on the menu yet. Come back at a closer date.</p>
             </td>
          </tr>
          <tr>
             <td class="time"><span>3:00pm</span></td>
             <td class="activity">
                <h4 class="activityTitle">Cocktails</h4>
-               <p>YUMMMM!</p>
+               <p>Cocktails. Beers. Wine. Apple Juice. Water. Milk. Whatever. You name it.</p>
             </td>
          </tr>
          <tr>
             <td class="time"><span>4:00pm</span></td>
             <td class="activity">
                <h4 class="activityTitle">Wedding</h4>
-               <p>Let's get kitched</p>
+               <p>Let's get hitched.</p>
             </td>
          </tr>
          <tr>
             <td class="time"><span>4:30pm</span></td>
             <td class="activity">
                <h4 class="activityTitle">More Cocktails!</h4>
-               <p>(I dont know what this is. Sarah says its going to be awesome.)</p>
+               <p>Several things to choose from as stated above. Also Or-dervs.</p>
             </td>
          </tr>
          <tr>
             <td class="time"><span>5:30pm</span></td>
             <td class="activity">
                <h4 class="activityTitle">Dinner and Dancing</h4>
-               <p>Catering will be provided by, Blue Ribbon BBQ. Buffet style. Classy as hell. <a href="menu" onclick="infoPopUp(this); return false;">Check out the menu.</a></p>
-               <p>Who knows how long this will go!</p>
+               <p>Catering will be provided by, Blue Ribbon BBQ. Buffet style. Classy as heck. <a href="#menu">Check out the menu.</a></p>
+               <p>Let's have some fun!</p>
             </td>
          </tr>
       </tbody>
@@ -266,7 +255,7 @@
             <td class="time"><span>11:00am</span></td>
             <td class="activity">
                <h4 class="activityTitle">Camp Wing Check Out</h4>
-               <p>Guests who are staying at Camp Wing for the weekend can need to check out at this point. And to quote one of my favourite songs, <em>"..you don't have to go home but you can't stay here."</em></p>
+               <p>Breakfast provided for overnight guests. Guests who are staying at Camp Wing for the weekend need to check out at this point. And to quote one of my favourite songs, <em>"..you don't have to go home but you can't stay here."</em></p>
             </td>
          </tr>
       </tbody>
@@ -274,6 +263,18 @@
    </div>
 </div>
 </div>
+
+<div id="menu" style="background-color: #ffffff; border-top:1px solid #cccccc" class="genericContentAreaSuperWidth menu">
+   <div class="genericContentArea">
+      <div class="col-66" style="margin:0 auto;padding-bottom:60px;">
+      <img src="images/blueRibbon.JPG" style="width:200px;margin:0 auto; display:block;"/>
+      <h2 class="lineTitle"><span class="title">Catered by Blue Ribbon BBQ</span><span class="line"></span></h2>
+      <p style="font-size:22px;">BBQ Chicken &bull; Pulled Pork &bull; Beef Brisquet</p>
+      <p style="font-size:18px;">Mac n' Cheese &bull; Green Beans &bull; Green Salad &bull; Corn Bread</p>
+      </div>
+   </div>
+</div>
+
 
 
 <div id="rsvp" style="background-color: #5189BD; border-top:1px solid #cccccc" class="genericContentAreaSuperWidth RSVP">
