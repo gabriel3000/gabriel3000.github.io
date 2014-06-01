@@ -571,8 +571,29 @@ width: 100%;
   }
 }
 
+@media (max-width: 700px){
+  #imageScroller_Container{
+  height: 360px;
+  }
+}
 
 @media (max-width: 400px){
+  .sectionImage{
+    position: relative;
+    width: auto;
+  }
+  .genericContentArea > .col-50 > div {
+    padding: 0px!important;
+  }
+  .fright, .fleft {
+    float: none;
+  }
+  #imageScroller_Container{
+  height: 200px;
+  }
+  div#accomodations + div {
+    padding: 0px!important;
+  }
   #container{
   margin:38px 10px;
   }
