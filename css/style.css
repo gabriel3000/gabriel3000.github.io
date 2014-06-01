@@ -578,6 +578,12 @@ width: 100%;
 }
 
 @media (max-width: 400px){
+  .genericContentArea{
+    height: auto!important;
+  }
+  #header{
+    display:none;
+  }
   .sectionImage{
     position: relative;
     width: auto;
@@ -595,7 +601,7 @@ width: 100%;
     padding: 0px!important;
   }
   #container{
-  margin:38px 10px;
+  margin:10px 10px;
   }
   .col-66{
   width: 100%;
