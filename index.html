@@ -9,22 +9,12 @@
    <link href="http://fonts.googleapis.com/css?family=Raleway:100" rel="stylesheet" type="text/css">
    <link type="text/css" href="css/style.css" rel="stylesheet">
    <script type="text/javascript" src="js/jquery-1.7.1.min.js"></script>
+   <script src="js/jquery.instagram.js" type="text/javascript"></script>
    <script type="text/javascript" src="js/weddingjs.js"></script>
    <script type="text/javascript"
       src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDekk3k_kv6Y5Wu_KfR-AoLYafgmENKdIU&sensor=SET_TO_TRUE_OR_FALSE"></script>
    <script type="text/javascript">
       //googleMapsAPIKEy=AIzaSyDekk3k_kv6Y5Wu_KfR-AoLYafgmENKdIU
-
-      /* Duxbury Tall Pines
-      585 Lincoln St
-      42.0417525
-      -70.6722767
-
-      Marshfield Inn
-      7 Old Plain St Marshfield, MA 02050
-      42.0959285
-      -70.7182413
-      */
       var marchFieldInn_latLng      = new google.maps.LatLng(42.0959285,-70.7182413);
       var duxburyTallPines_latLng   = new google.maps.LatLng(42.0417525,-70.6722767);
 
@@ -42,18 +32,6 @@
             map: map,
             title:"The Venue at Camp Wing"
          });
-         // var marker1 = new google.maps.Marker({
-         //    position: marchFieldInn_latLng,
-         //    map: map,
-         //    title:"Marshfield Inn",
-         //    icon:dotImage
-         // });
-         // var marker2 = new google.maps.Marker({
-         //    position: duxburyTallPines_latLng,
-         //    map: map,
-         //    title:"Duxbury Tall Pines",
-         //    icon:dotImage
-         // });
       }
       google.maps.event.addDomListener(window, 'load', initialize);
    </script>
@@ -76,6 +54,19 @@
 </div>
 
 <div id="container">
+<div id="socialWrapper">
+   <h3 class="center">#sarahgabehitched</h3>
+   <div class="blackDividerLine"></div>
+   <p style="color: #ffffff;" class="center">Post a photo to instagram with the hashtag, #sarahgabehitched, and help us make a photo album!</p>
+   <div class="wrapper-section-full social noBottomMargin">
+      <div class="section-full-inner wrapper-instagram">
+         <div id="instagram"></div>
+      </div>
+   </div>
+</div>
+
+
+
       <div id="imageScroller_Container">
 <div id="imageScroller">
             <div id="slide1" class="heroImage onScreen" style="background-image: url('images/optimize1.jpg'); left: 0px;">
