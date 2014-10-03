@@ -220,7 +220,7 @@ function instagramPicLoaded(img){
                             '<div class="instagramSocialData">'+
                             '<p class="user">@'+this.user.username+'</p>'+
                             '<img class="instagramLike" src="images/heart_deselected.png" alt="instagramLike"/><span class="likes">'+this.likes.count+'</span>'+
-                            '<p class="caption">'+this.caption.text+'</p>'+
+                            '<p class="caption">'+((this.caption!=null)?this.caption.text : '')+'</p>'+
                             '</div>')//standard_resolution  thumbnail low_resolution
                         //.html('<img src="' + this.images.low_resolution.url + '"'); //standard_resolution  thumbnail low_resolution
 
