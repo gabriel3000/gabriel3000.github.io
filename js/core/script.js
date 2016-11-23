@@ -139,6 +139,11 @@ var COLOR = {
     COLOR.buildstyle();
     COLOR.links();
 
+    var cubert = document.getElementById('cubert');
+    cubert.addEventListener('mouseover',function(){
+      COLOR.buildstyle();
+    },false);
+
     //Reload page if keystone is being shit.
     if(document.getElementById("cmscontent") == null){
       window.location.href = window.location.href;
@@ -146,4 +151,3 @@ var COLOR = {
   }
 };
 window.addEventListener('load', COLOR.init, false)
-
