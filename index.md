@@ -23,7 +23,7 @@ layout: default
       <a id="link0" class="link" href="http://www.isobar.com/us/home" target="_blank">Isobar</a>
     </h3>
     <h4>2014 - present</h4>
-    <p>Award winning online marketing and enterprise level e-commerce experiences.<br />Accounts: Adidas, Lego, Royal Caribbean, <a id="link6" class="link" href="https://exoticcars.enterprise.com/en/home.html" target="_blank">Enterprise</a></p>
+    <p>Award winning online marketing and enterprise level e-commerce experiences.<br />Accounts: <a id="link9" class="link" href="https://www.cinemax.com/" target="_blank">Cinemax,</a> Adidas, Lego, Royal Caribbean, <a id="link6" class="link" href="https://exoticcars.enterprise.com/en/home.html" target="_blank">Enterprise</a></p>
     <div class="awards">
       <h4>Award winning work at Isobar:</h4>
       <h4><a id="link7" class="link" href="https://exoticcars.enterprise.com/en/home.html" target="_blank">Enterprise Exotic Cars</a></h4>
