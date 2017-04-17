@@ -6,7 +6,7 @@ layout: default
 ---
 <div id="cmscontent">
   <div class="top">
-    <h2>Front End Web Developer currently employed at <a id="link1" class="link" href="http://www.isobar.com/us/home">Isobar</a>, a digital marketing agency working on the cutting edge of e-technology (internet things). I'm a pro at CSS3, HTML5, Javascript...</h2>
+    <h2>Front End Web Developer currently employed at <a id="link1" class="link" href="http://www.isobar.com/us/home">Isobar</a>, a digital marketing agency working on the cutting edge of the web. I'm a pro at SCSS, HTML5, Canvas, Javascript, Webpack, Babel, Gulp...</h2>
   </div>
   <p data-height="598" data-theme-id="0" data-slug-hash="pEWzzE" data-default-tab="result" data-user="gjablanczy" data-embed-version="2" data-pen-title="Ballroom" class="codepen">See the Pen <a href="http://codepen.io/gjablanczy/pen/pEWzzE/">Ballroom</a> by Gabriel Jablanczy (<a href="http://codepen.io/gjablanczy">@gjablanczy</a>) on <a href="http://codepen.io">CodePen</a>.</p>
   <script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>

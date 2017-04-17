@@ -141,6 +141,13 @@ var COLOR = {
 
     var cubert = document.getElementById('cubert');
     cubert.addEventListener('mouseover',function(){
+      var anchortags = document.getElementsByClassName('link');
+      var anchoramount = anchortags.length;
+      for (var i = 0; i < anchoramount; i++) {
+        var thelink = document.getElementById('link' + i);
+        thelink.removeAttribute("style");
+      }
+
       COLOR.buildstyle();
     },false);
 
