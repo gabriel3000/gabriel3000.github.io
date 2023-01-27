@@ -5,7 +5,7 @@
 layout: default
 ---
 <div>
-    <h2>Experienced Front End Web Engineer. Currently employed at <a href="http://www.logmein.com">LogMeIn</a>. Well versed in CSS, HTML5, Javascript and numerous libraries.</h2>
+    <h2>Staff Front End Web Developer. Currently employed at <a href="https://www.lastpass.com">LastPass</a>. Well versed in CSS, HTML5, Javascript and numerous libraries.</h2>
     <div>
   <div class="job">
     <h3>
