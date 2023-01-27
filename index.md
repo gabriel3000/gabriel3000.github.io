@@ -9,9 +9,9 @@ layout: default
     <div>
   <div class="job">
     <h3>
-      <a href="http://www.LogMeIn.com/" target="_blank">LogMeIn</a><span> 2017-Present</span>
+      <a href="http://www.lastpass.com/" target="_blank">LastPass</a><span> 2017-Present</span>
     </h3>
-    <p>Web Engineer for LogMeIn marketing and e-commerce web experiences</p>
+    <p>Web Engineer for LastPass marketing and e-commerce web experiences</p>
   </div>
 
   <div class="job">
