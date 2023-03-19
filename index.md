@@ -5,13 +5,13 @@
 layout: default
 ---
 <div>
-    <h2>Staff Front End Web Developer. Currently employed at <a href="https://www.lastpass.com">LastPass</a>. Well versed in CSS, HTML5, Javascript and numerous libraries.</h2>
+    <h2>Staff Front End Web Developer. Currently employed at <a href="https://www.lastpass.com">LastPass</a>. Expert in Javascript, TypeScript, HTML5, CSS and numerous libraries.</h2>
     <div>
   <div class="job">
     <h3>
       <a href="http://www.lastpass.com/" target="_blank">LastPass</a><span> 2017-Present</span>
     </h3>
-    <p>Web Engineer for LastPass marketing and e-commerce web experiences</p>
+    <p>Staff Front End Web Developer at LastPass.</p>
   </div>
 
   <div class="job">
