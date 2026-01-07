@@ -1,0 +1,16 @@
+_site
+.sass-cache
+.jekyll-metadata
+.DS_Store
+node_modules
+.bundle
+vendor/bundle
+vendor/cache
+vendor/gems
+vendor/ruby
+.idea
+.vscode
+*.swp
+*.swo
+*.log
+.jekyll-cache

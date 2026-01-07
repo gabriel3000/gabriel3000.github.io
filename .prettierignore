@@ -1,0 +1,9 @@
+# Jekyll generated files
+_site/
+
+# SCSS files with Jekyll front matter
+assets/css/style.scss
+
+# Vendor files
+node_modules/
+vendor/

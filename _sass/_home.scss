@@ -1,0 +1,151 @@
+// Home page styles
+
+.home {
+  max-width: $content-max-width;
+  margin: 0 auto;
+}
+
+// Hero section
+.hero {
+  text-align: center;
+  padding: $spacing-unit * 3 0;
+  margin-bottom: $spacing-unit * 3;
+  border-bottom: 2px solid $border-color;
+
+  h1 {
+    font-size: 3rem;
+    margin-top: 0;
+    margin-bottom: $spacing-unit;
+    color: $primary-color;
+  }
+
+  .tagline {
+    font-size: 1.5rem;
+    color: $secondary-color;
+    font-weight: 600;
+    margin-bottom: $spacing-unit;
+  }
+
+  .intro {
+    font-size: 1.1rem;
+    color: $text-light;
+    max-width: 600px;
+    margin: 0 auto;
+    line-height: 1.6;
+  }
+}
+
+// Experience section
+.experience {
+  margin-bottom: $spacing-unit * 3;
+
+  h2 {
+    font-size: 2rem;
+    margin-bottom: $spacing-unit * 2;
+    padding-bottom: $spacing-unit;
+    border-bottom: 1px solid $border-color;
+  }
+}
+
+.job {
+  margin-bottom: $spacing-unit * 2.5;
+  padding: $spacing-unit * 1.5;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  border-left: 4px solid $secondary-color;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+
+  &:hover {
+    transform: translateX(4px);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  }
+
+  .job-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-bottom: $spacing-unit * 0.75;
+    flex-wrap: wrap;
+    gap: $spacing-unit * 0.5;
+
+    h3 {
+      margin: 0;
+      font-size: 1.5rem;
+      color: $primary-color;
+    }
+
+    .job-period {
+      font-size: 0.95rem;
+      color: $text-light;
+      font-weight: 600;
+      white-space: nowrap;
+    }
+  }
+
+  .job-title {
+    font-size: 1.05rem;
+    color: $text-color;
+    margin-bottom: $spacing-unit * 0.5;
+    font-weight: 500;
+  }
+
+  .job-description {
+    color: $text-color;
+    margin-bottom: $spacing-unit * 0.5;
+    line-height: 1.6;
+  }
+
+  .job-accounts {
+    color: $text-light;
+    font-size: 0.95rem;
+    margin-bottom: 0;
+
+    strong {
+      color: $text-color;
+    }
+  }
+}
+
+// Blog posts section on home
+.blog-posts {
+  margin-top: $spacing-unit * 4;
+  padding-top: $spacing-unit * 2;
+  border-top: 2px solid $border-color;
+
+  h2 {
+    font-size: 2rem;
+    margin-bottom: $spacing-unit * 1.5;
+  }
+}
+
+// Responsive adjustments
+@media (max-width: $tablet) {
+  .hero {
+    padding: $spacing-unit * 2 0;
+
+    h1 {
+      font-size: 2rem;
+    }
+
+    .tagline {
+      font-size: 1.25rem;
+    }
+
+    .intro {
+      font-size: 1rem;
+    }
+  }
+
+  .job {
+    padding: $spacing-unit;
+
+    .job-header {
+      flex-direction: column;
+      align-items: flex-start;
+
+      h3 {
+        font-size: 1.25rem;
+      }
+    }
+  }
+}

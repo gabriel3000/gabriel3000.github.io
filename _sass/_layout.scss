@@ -1,7 +1,97 @@
-// Layout
-//
-// Styles for managing the structural hierarchy of the site.
+// Layout styles
+.wrapper {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
 
-footer {
-  margin-bottom: 2rem;
+.container {
+  max-width: $container-max-width;
+  margin: 0 auto;
+  padding: 0 $spacing-unit;
+  width: 100%;
+}
+
+// Header
+.site-header {
+  background-color: $primary-color;
+  color: #fff;
+  padding: $spacing-unit * 2 0;
+  margin-bottom: $spacing-unit * 2;
+
+  .site-title {
+    margin: 0 0 $spacing-unit 0;
+    font-size: 2rem;
+
+    a {
+      color: #fff;
+      text-decoration: none;
+
+      &:hover {
+        color: #fff;
+        opacity: 0.8;
+      }
+    }
+  }
+
+  .site-description {
+    color: rgba(255, 255, 255, 0.8);
+    margin-bottom: $spacing-unit;
+  }
+}
+
+.site-nav {
+  a {
+    color: #fff;
+    margin-right: $spacing-unit;
+    padding: 0.5rem 0;
+    display: inline-block;
+
+    &:hover {
+      text-decoration: none;
+      opacity: 0.8;
+    }
+  }
+}
+
+// Main content
+.page-content {
+  flex: 1;
+  padding-bottom: $spacing-unit * 3;
+}
+
+// Footer
+.site-footer {
+  background-color: #f8f8f8;
+  padding: $spacing-unit * 2 0;
+  margin-top: $spacing-unit * 3;
+  border-top: 1px solid $border-color;
+  color: $text-light;
+  font-size: 0.9rem;
+
+  p {
+    margin: 0;
+    text-align: center;
+  }
+}
+
+// Responsive
+@media (max-width: $tablet) {
+  .container {
+    padding: 0 $spacing-unit * 0.75;
+  }
+
+  .site-header {
+    padding: $spacing-unit 0;
+
+    .site-title {
+      font-size: 1.5rem;
+    }
+  }
+
+  .site-nav {
+    a {
+      margin-right: $spacing-unit * 0.5;
+    }
+  }
 }

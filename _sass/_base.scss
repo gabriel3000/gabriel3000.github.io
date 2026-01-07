@@ -1,78 +1,97 @@
-// Body resets
-//
-// Update the foundational and global aspects of the page.
-
+// Base styles
 * {
-  -webkit-box-sizing: border-box;
-     -moz-box-sizing: border-box;
-          box-sizing: border-box;
-}
-
-html,
-body {
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
 
 html {
-  font-family: $root-font-family;
-  font-size: $root-font-size;
-  line-height: $root-line-height;
-
-  @media (min-width: $large-breakpoint) {
-    font-size: $large-font-size;
-  }
+  font-size: $font-size-base;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 body {
-  color: $body-color;
-  background-color: $body-bg;
-  -webkit-text-size-adjust: 100%;
-      -ms-text-size-adjust: 100%;
+  font-family: $font-family-base;
+  line-height: $line-height-base;
+  color: $text-color;
+  background-color: $background-color;
 }
 
-// No `:visited` state is required by default (browsers will use `a`)
+// Typography
+h1, h2, h3, h4, h5, h6 {
+  margin-top: $spacing-unit * 1.5;
+  margin-bottom: $spacing-unit;
+  font-weight: 600;
+  line-height: 1.2;
+  color: $primary-color;
+}
+
+h1 { font-size: 2.5rem; }
+h2 { font-size: 2rem; }
+h3 { font-size: 1.75rem; }
+h4 { font-size: 1.5rem; }
+h5 { font-size: 1.25rem; }
+h6 { font-size: 1rem; }
+
+p {
+  margin-bottom: $spacing-unit;
+}
+
 a {
   color: $link-color;
   text-decoration: none;
+  transition: color 0.2s ease;
 
-  // `:focus` is linked to `:hover` for basic accessibility
-  &:hover,
-  &:focus {
+  &:hover {
+    color: $link-hover;
     text-decoration: underline;
   }
+}
 
-  strong {
-    color: inherit;
+ul, ol {
+  margin-left: $spacing-unit * 1.5;
+  margin-bottom: $spacing-unit;
+}
+
+code {
+  font-family: $font-family-mono;
+  font-size: 0.9em;
+  background-color: #f5f5f5;
+  padding: 0.2em 0.4em;
+  border-radius: 3px;
+}
+
+pre {
+  background-color: #f5f5f5;
+  padding: $spacing-unit;
+  border-radius: 5px;
+  overflow-x: auto;
+  margin-bottom: $spacing-unit;
+
+  code {
+    background-color: transparent;
+    padding: 0;
   }
 }
 
 img {
-  display: block;
   max-width: 100%;
-  margin: 0 0 1rem;
-  border-radius: 5px;
+  height: auto;
+  display: block;
 }
 
-table {
-  margin-bottom: 1rem;
-  width: 100%;
-  font-size: 85%;
-  border: 1px solid #e5e5e5;
-  border-collapse: collapse;
+blockquote {
+  border-left: 4px solid $border-color;
+  padding-left: $spacing-unit;
+  margin-left: 0;
+  margin-bottom: $spacing-unit;
+  color: $text-light;
+  font-style: italic;
 }
 
-td,
-th {
-  padding: .25rem .5rem;
-  border: 1px solid #e5e5e5;
-}
-
-th {
-  text-align: left;
-}
-
-tbody tr:nth-child(odd) td,
-tbody tr:nth-child(odd) th {
-  background-color: #f9f9f9;
+hr {
+  border: 0;
+  border-top: 1px solid $border-color;
+  margin: $spacing-unit * 2 0;
 }
