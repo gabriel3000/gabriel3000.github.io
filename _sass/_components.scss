@@ -71,7 +71,7 @@
     .post-tags {
       .tag {
         display: inline-block;
-        background-color: #f0f0f0;
+        background-color: rgba(255, 255, 255, 0.1);
         padding: 0.25rem 0.5rem;
         border-radius: 3px;
         font-size: 0.85rem;
@@ -80,7 +80,7 @@
 
         &:hover {
           background-color: $secondary-color;
-          color: #fff;
+          color: $background-color;
           text-decoration: none;
         }
       }

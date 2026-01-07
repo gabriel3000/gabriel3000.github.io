@@ -14,28 +14,30 @@
 
 // Header
 .site-header {
-  background-color: $primary-color;
+  background-color: $background-dark;
   color: #fff;
   padding: $spacing-unit * 2 0;
   margin-bottom: $spacing-unit * 2;
+  border-bottom: 2px solid $border-color;
 
   .site-title {
     margin: 0 0 $spacing-unit 0;
-    font-size: 2rem;
+    font-size: 2.5rem;
+    font-family: $font-family-base;
+    font-weight: 700;
 
     a {
       color: #fff;
       text-decoration: none;
 
       &:hover {
-        color: #fff;
-        opacity: 0.8;
+        color: $link-hover;
       }
     }
   }
 
   .site-description {
-    color: rgba(255, 255, 255, 0.8);
+    color: $text-light;
     margin-bottom: $spacing-unit;
   }
 }
@@ -62,10 +64,10 @@
 
 // Footer
 .site-footer {
-  background-color: #f8f8f8;
+  background-color: $background-dark;
   padding: $spacing-unit * 2 0;
   margin-top: $spacing-unit * 3;
-  border-top: 1px solid $border-color;
+  border-top: 2px solid $border-color;
   color: $text-light;
   font-size: 0.9rem;
 

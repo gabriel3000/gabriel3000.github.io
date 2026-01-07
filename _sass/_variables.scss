@@ -1,17 +1,19 @@
-// Colors
-$primary-color: #2c3e50;
-$secondary-color: #3498db;
-$text-color: #333;
-$text-light: #666;
-$background-color: #fff;
-$border-color: #ddd;
-$link-color: #3498db;
-$link-hover: #2980b9;
+// Colors - Dark Theme
+$primary-color: #e8eaed;
+$secondary-color: #8ab4f8;
+$text-color: #e8eaed;
+$text-light: #bdc1c6;
+$background-color: #2b2b2b;
+$background-dark: #1e1e1e;
+$border-color: #404040;
+$link-color: #8ab4f8;
+$link-hover: #aecbfa;
 
 // Typography
-$font-family-base: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+$font-family-base: Georgia, "Times New Roman", serif;
+$font-family-heading: Georgia, "Times New Roman", serif;
 $font-family-mono: "Monaco", "Courier New", monospace;
-$font-size-base: 16px;
+$font-size-base: 18px;
 $line-height-base: 1.6;
 
 // Spacing

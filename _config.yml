@@ -28,6 +28,10 @@ github_username: jekyll
 markdown: kramdown
 plugins:
   - jekyll-feed
+
+# Sass settings
+sass:
+  quiet_deps: true
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
 # to override the default setting.

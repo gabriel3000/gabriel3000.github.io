@@ -13,10 +13,12 @@
   border-bottom: 2px solid $border-color;
 
   h1 {
-    font-size: 3rem;
+    font-size: 3.5rem;
     margin-top: 0;
     margin-bottom: $spacing-unit;
     color: $primary-color;
+    font-family: $font-family-base;
+    font-weight: 700;
   }
 
   .tagline {
@@ -24,6 +26,7 @@
     color: $secondary-color;
     font-weight: 600;
     margin-bottom: $spacing-unit;
+    font-family: $font-family-base;
   }
 
   .intro {
@@ -50,14 +53,15 @@
 .job {
   margin-bottom: $spacing-unit * 2.5;
   padding: $spacing-unit * 1.5;
-  background-color: #f9f9f9;
+  background-color: rgba(255, 255, 255, 0.05);
   border-radius: 8px;
   border-left: 4px solid $secondary-color;
   transition: transform 0.2s ease, box-shadow 0.2s ease;
 
   &:hover {
     transform: translateX(4px);
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    background-color: rgba(255, 255, 255, 0.08);
   }
 
   .job-header {
@@ -70,8 +74,10 @@
 
     h3 {
       margin: 0;
-      font-size: 1.5rem;
+      font-size: 1.75rem;
       color: $primary-color;
+      font-family: $font-family-base;
+      font-weight: 700;
     }
 
     .job-period {
