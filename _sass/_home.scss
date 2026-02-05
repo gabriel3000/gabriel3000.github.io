@@ -5,25 +5,39 @@
   margin: 0 auto;
 }
 
+// Hero image
+.hero-image {
+  width: 100%;
+  text-align: center;
+
+  img {
+    max-width: 576px;
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    transition: transform 0.3s ease;
+  }
+}
+
 // Hero section
 .hero {
   text-align: center;
-  padding: $spacing-unit * 3 0;
-  margin-bottom: $spacing-unit * 3;
-  border-bottom: 2px solid $border-color;
+  margin-top: -14px;
+  padding: 0 0 $spacing-unit * 3 0;
 
   h1 {
-    font-size: 3.5rem;
-    margin-top: 0;
-    margin-bottom: $spacing-unit;
+    font-size: 0.1rem;
+    margin: 0;
     color: $primary-color;
     font-family: $font-family-base;
     font-weight: 700;
+    opacity: 0;
+    height: 0;
   }
 
   .tagline {
     font-size: 1.5rem;
-    color: $secondary-color;
+    color: rgb(0, 255, 0);
     font-weight: 600;
     margin-bottom: $spacing-unit;
     font-family: $font-family-base;
@@ -35,6 +49,16 @@
     max-width: 600px;
     margin: 0 auto;
     line-height: 1.6;
+
+    .green-link {
+      color: rgb(0, 255, 0);
+      text-decoration: none;
+      font-weight: 600;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
   }
 }
 
@@ -55,8 +79,10 @@
   padding: $spacing-unit * 1.5;
   background-color: rgba(255, 255, 255, 0.05);
   border-radius: 8px;
-  border-left: 4px solid $secondary-color;
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  border-left: 4px solid rgb(0, 255, 0);
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
 
   &:hover {
     transform: translateX(4px);
@@ -75,7 +101,7 @@
     h3 {
       margin: 0;
       font-size: 1.75rem;
-      color: $primary-color;
+      color: rgb(0, 255, 0);
       font-family: $font-family-base;
       font-weight: 700;
     }
@@ -126,22 +152,6 @@
 
 // Responsive adjustments
 @media (max-width: $tablet) {
-  .hero {
-    padding: $spacing-unit * 2 0;
-
-    h1 {
-      font-size: 2rem;
-    }
-
-    .tagline {
-      font-size: 1.25rem;
-    }
-
-    .intro {
-      font-size: 1rem;
-    }
-  }
-
   .job {
     padding: $spacing-unit;
 

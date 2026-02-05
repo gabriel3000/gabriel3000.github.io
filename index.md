@@ -3,10 +3,13 @@ layout: home
 title: Gabriel Jablanczy
 ---
 
+<div class="hero-image">
+  <img src="/assets/image/gabe-site.png" alt="Gabriel Jablanczy">
+</div>
+
 <section class="hero">
   <h1>Gabriel Jablanczy</h1>
-  <p class="tagline">Staff Front End Web Developer</p>
-  <p class="intro">Currently employed at LastPass. Expert in Javascript, TypeScript, HTML5, CSS and numerous libraries.</p>
+  <p class="intro">Staff Front End Web Developer currently employed at <a href="https://www.lastpass.com" class="green-link">LastPass</a>. Expert in Javascript, TypeScript, HTML5, CSS and numerous libraries.</p>
 </section>
 
 <section class="experience">
