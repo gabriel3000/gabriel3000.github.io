@@ -4,7 +4,7 @@ title: Gabriel Jablanczy
 ---
 
 <div class="hero-image">
-  <img src="/assets/image/gabe-site.png" alt="Gabriel Jablanczy">
+  <img src="/assets/image/gabe-site-animated.svg" alt="Gabriel Jablanczy">
 </div>
 
 <section class="hero">
