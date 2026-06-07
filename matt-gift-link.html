@@ -1,0 +1,82 @@
+---
+layout: default
+title: "🎁"
+permalink: /matt-gift-link/
+---
+
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link
+  href="https://fonts.googleapis.com/css2?family=UnifrakturMaguntia&display=swap"
+  rel="stylesheet"
+/>
+
+<style>
+  .gift-page {
+    font-family: "UnifrakturMaguntia", serif;
+    color: #000;
+    background-color: #ffe000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    text-align: center;
+    gap: 1.5rem;
+    margin: -2rem;
+    padding: 2rem;
+  }
+
+  .gift-page h1 {
+    font-size: 2rem;
+    font-family: "UnifrakturMaguntia", serif;
+    color: #000;
+  }
+
+  @keyframes pulse {
+    0%,
+    100% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.08);
+    }
+  }
+
+  .gift-link img {
+    width: 280px;
+    cursor: pointer;
+    animation: pulse 1.6s ease-in-out infinite;
+    transition: filter 0.15s ease;
+  }
+
+  .gift-link img:hover {
+    animation: none;
+    transform: scale(1.06) rotate(-2deg);
+    filter: drop-shadow(0 8px 20px rgba(0, 0, 0, 0.25));
+  }
+
+  .gift-link img:active {
+    animation: none;
+    transform: scale(0.97);
+  }
+
+  .gift-hint {
+    font-size: 0.9rem;
+    opacity: 0.6;
+  }
+</style>
+
+<div class="gift-page">
+  <h1>Happy Birthday Matt</h1>
+  <a
+    class="gift-link"
+    href="https://www.patreon.com/joytactics/redeem/f/201E23ED27"
+  >
+    <img
+      src="{{ '/assets/image/GIFTMAN.png' | relative_url }}"
+      alt="Your gift awaits"
+    />
+  </a>
+  <p>"Click me now. Haha!"</p>
+</div>
