@@ -1,0 +1,523 @@
+@use "variables" as *;
+
+// Base styles
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: $font-size-base;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  font-family: $font-family-base;
+  line-height: $line-height-base;
+  color: $text-color;
+  background-color: $background-color;
+}
+
+// Typography
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-top: $spacing-unit * 1.5;
+  margin-bottom: $spacing-unit;
+  font-weight: 700;
+  line-height: 1.2;
+  color: $primary-color;
+  font-family: $font-family-base;
+}
+
+h1 {
+  font-size: 2.5rem;
+}
+h2 {
+  font-size: 2rem;
+}
+h3 {
+  font-size: 1.75rem;
+}
+h4 {
+  font-size: 1.5rem;
+}
+h5 {
+  font-size: 1.25rem;
+}
+h6 {
+  font-size: 1rem;
+}
+
+p {
+  margin-bottom: $spacing-unit;
+}
+
+a {
+  color: $link-color;
+  text-decoration: none;
+  transition: color 0.2s ease;
+
+  &:hover {
+    color: $link-hover;
+    text-decoration: underline;
+  }
+}
+
+ul,
+ol {
+  margin-left: $spacing-unit * 1.5;
+  margin-bottom: $spacing-unit;
+}
+
+code {
+  font-family: $font-family-mono;
+  font-size: 0.9em;
+  background-color: $background-dark;
+  color: #f8f8f2;
+  padding: 0.2em 0.4em;
+  border-radius: 3px;
+}
+
+pre {
+  background-color: $background-dark;
+  padding: $spacing-unit;
+  border-radius: 5px;
+  overflow-x: auto;
+  margin-bottom: $spacing-unit;
+
+  code {
+    background-color: transparent;
+    padding: 0;
+  }
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+blockquote {
+  border-left: 4px solid $border-color;
+  padding-left: $spacing-unit;
+  margin-left: 0;
+  margin-bottom: $spacing-unit;
+  color: $text-light;
+  font-style: italic;
+}
+
+hr {
+  border: 0;
+  border-top: 1px solid $border-color;
+  margin: $spacing-unit * 2 0;
+}
+
+// Layout styles
+.wrapper {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.container {
+  max-width: $container-max-width;
+  margin: 0 auto;
+  padding: 0 $spacing-unit;
+  width: 100%;
+}
+
+// Header
+.site-header {
+  background-color: $background-dark;
+  color: #fff;
+  padding: $spacing-unit * 2 0;
+  margin-bottom: $spacing-unit * 2;
+  border-bottom: 2px solid $border-color;
+
+  .site-title {
+    margin: 0 0 $spacing-unit 0;
+    font-size: 2.5rem;
+    font-family: $font-family-base;
+    font-weight: 700;
+
+    a {
+      color: #fff;
+      text-decoration: none;
+
+      &:hover {
+        color: $link-hover;
+      }
+    }
+  }
+
+  .site-description {
+    color: $text-light;
+    margin-bottom: $spacing-unit;
+  }
+}
+
+.site-nav {
+  a {
+    color: #fff;
+    margin-right: $spacing-unit;
+    padding: 0.5rem 0;
+    display: inline-block;
+
+    &:hover {
+      text-decoration: none;
+      opacity: 0.8;
+    }
+  }
+}
+
+// Main content
+.page-content {
+  flex: 1;
+  padding-bottom: $spacing-unit * 3;
+}
+
+// Footer
+.site-footer {
+  background-color: $background-dark;
+  padding: $spacing-unit * 2 0;
+  margin-top: $spacing-unit * 3;
+  border-top: 2px solid $border-color;
+  color: $text-light;
+  font-size: 0.9rem;
+
+  p {
+    margin: 0;
+    text-align: center;
+  }
+}
+
+// Responsive
+@media (max-width: $tablet) {
+  .container {
+    padding: 0 $spacing-unit * 0.75;
+  }
+
+  .site-header {
+    padding: $spacing-unit 0;
+
+    .site-title {
+      font-size: 1.5rem;
+    }
+  }
+
+  .site-nav {
+    a {
+      margin-right: $spacing-unit * 0.5;
+    }
+  }
+}
+
+// Component styles
+
+// Page
+.page {
+  max-width: $content-max-width;
+  margin: 0 auto;
+
+  .page-header {
+    margin-bottom: $spacing-unit * 2;
+
+    .page-title {
+      margin-top: 0;
+    }
+
+    .page-description {
+      color: $text-light;
+      font-size: 1.1rem;
+    }
+  }
+
+  .page-content {
+    margin-bottom: $spacing-unit * 2;
+  }
+}
+
+// Post
+.post {
+  max-width: $content-max-width;
+  margin: 0 auto;
+
+  .post-header {
+    margin-bottom: $spacing-unit * 2;
+
+    .post-title {
+      margin-top: 0;
+      margin-bottom: $spacing-unit * 0.5;
+    }
+
+    .post-meta {
+      color: $text-light;
+      font-size: 0.9rem;
+
+      time {
+        font-weight: 600;
+      }
+
+      .post-author,
+      .post-categories {
+        margin-left: $spacing-unit * 0.5;
+      }
+
+      a {
+        color: $text-light;
+
+        &:hover {
+          color: $link-color;
+        }
+      }
+    }
+  }
+
+  .post-content {
+    margin-bottom: $spacing-unit * 2;
+  }
+
+  .post-footer {
+    border-top: 1px solid $border-color;
+    padding-top: $spacing-unit;
+    margin-top: $spacing-unit * 2;
+
+    .post-tags {
+      .tag {
+        display: inline-block;
+        background-color: rgba(255, 255, 255, 0.1);
+        padding: 0.25rem 0.5rem;
+        border-radius: 3px;
+        font-size: 0.85rem;
+        margin-right: 0.5rem;
+        color: $text-color;
+
+        &:hover {
+          background-color: $secondary-color;
+          color: $background-color;
+          text-decoration: none;
+        }
+      }
+    }
+  }
+}
+
+// Post list
+.post-list {
+  list-style: none;
+  margin-left: 0;
+
+  .post-list-item {
+    margin-bottom: $spacing-unit * 2;
+    padding-bottom: $spacing-unit * 2;
+    border-bottom: 1px solid $border-color;
+
+    &:last-child {
+      border-bottom: none;
+    }
+
+    .post-list-title {
+      margin-top: 0;
+      margin-bottom: $spacing-unit * 0.5;
+
+      a {
+        color: $primary-color;
+
+        &:hover {
+          color: $link-color;
+        }
+      }
+    }
+
+    .post-list-meta {
+      color: $text-light;
+      font-size: 0.9rem;
+      margin-bottom: $spacing-unit * 0.5;
+    }
+
+    .post-list-excerpt {
+      margin-bottom: $spacing-unit * 0.5;
+    }
+  }
+}
+
+// Responsive components
+@media (max-width: $tablet) {
+  .post,
+  .page {
+    .post-header,
+    .page-header {
+      .post-title,
+      .page-title {
+        font-size: 1.75rem;
+      }
+    }
+  }
+}
+
+// Home page styles
+
+.home {
+  max-width: $content-max-width;
+  margin: 0 auto;
+}
+
+// Hero image
+.hero-image {
+  width: 100%;
+  text-align: center;
+  padding: 60px 0 30px;
+
+  img {
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    transition: transform 0.3s ease;
+  }
+}
+
+// Hero section
+.hero {
+  text-align: center;
+  margin-top: -14px;
+  padding: 0 0 $spacing-unit * 3 0;
+
+  h1 {
+    font-size: 0.1rem;
+    margin: 0;
+    color: $primary-color;
+    font-family: $font-family-base;
+    font-weight: 700;
+    opacity: 0;
+    height: 0;
+  }
+
+  .tagline {
+    font-size: 1.5rem;
+    color: rgb(0, 255, 0);
+    font-weight: 600;
+    margin-bottom: $spacing-unit;
+    font-family: $font-family-base;
+  }
+
+  .intro {
+    font-size: 1.1rem;
+    color: $text-light;
+    max-width: 600px;
+    margin: 0 auto;
+    line-height: 1.6;
+
+    .green-link {
+      color: rgb(0, 255, 0);
+      text-decoration: none;
+      font-weight: 600;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}
+
+// Experience section
+.experience {
+  margin-bottom: $spacing-unit * 3;
+
+  h2 {
+    font-size: 2rem;
+    margin-bottom: $spacing-unit * 2;
+    padding-bottom: $spacing-unit;
+    border-bottom: 1px solid $border-color;
+  }
+}
+
+.job {
+  margin-bottom: $spacing-unit * 2.5;
+  padding: $spacing-unit * 1.5;
+  background-color: rgba(255, 255, 255, 0.05);
+  border-radius: 8px;
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+
+  .job-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-bottom: $spacing-unit * 0.75;
+    flex-wrap: wrap;
+    gap: $spacing-unit * 0.5;
+
+    h3 {
+      margin: 0;
+      font-size: 1.75rem;
+      color: rgb(0, 255, 0);
+      font-family: $font-family-base;
+      font-weight: 700;
+    }
+
+    .job-period {
+      font-size: 0.95rem;
+      color: $text-light;
+      font-weight: 600;
+      white-space: nowrap;
+    }
+  }
+
+  .job-title {
+    font-size: 1.05rem;
+    color: $text-color;
+    margin-bottom: $spacing-unit * 0.5;
+    font-weight: 500;
+  }
+
+  .job-description {
+    color: $text-color;
+    margin-bottom: $spacing-unit * 0.5;
+    line-height: 1.6;
+  }
+
+  .job-accounts {
+    color: $text-light;
+    font-size: 0.95rem;
+    margin-bottom: 0;
+
+    strong {
+      color: $text-color;
+    }
+  }
+}
+
+// Blog posts section on home
+.blog-posts {
+  margin-top: $spacing-unit * 4;
+  padding-top: $spacing-unit * 2;
+  border-top: 2px solid $border-color;
+
+  h2 {
+    font-size: 2rem;
+    margin-bottom: $spacing-unit * 1.5;
+  }
+}
+
+// Responsive adjustments
+@media (max-width: $tablet) {
+  .job {
+    padding: $spacing-unit;
+
+    .job-header {
+      flex-direction: column;
+      align-items: flex-start;
+
+      h3 {
+        font-size: 1.25rem;
+      }
+    }
+  }
+}
